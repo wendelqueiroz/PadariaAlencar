@@ -21,8 +21,8 @@ header > h1 { /* selecionamos aqui a cor da letra do nosso h1 ou seja, do nosso 
 }
 
 header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alterações */
-    width: 200px;
-    height: 115px;
+    width: 240px;
+    height: 165px;
 }
 
 
@@ -37,39 +37,64 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 }
 
 .item-menu-header { /* nossas li que estão dentro do list menu*/
-  margin-right: 25px;
+  margin-right: 25px; /* margem da direita*/
 }
 
 .item-menu-header > a:hover { /*nossas li que estão dentro do list menu*/
-  color: yellow;
-  transition: 1s;
+  color: yellow; /* aqui demos uma cor*/
+  transition: 1s; /* é o tempo em que será exibido ao passar o cursor*/
 }
 
-.item-menu-header > a {
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
+.item-menu-header > a { /*nossa li que estão dentro do list menu, (a) nossa tag de link que é*/
+  color: white; /*cor das letras*/
+  text-decoration: none; /* reponsável por tirar o sublinhado da parte inferior do texto*/
+  font-size: 12px; /* tamanho da letra*/
 }
 
 #btn-header { /*botão de login */
-  display: flex;
+  display: flex; /* responsável por colocar os itens na mesma linha*/
 
 }
 
-#btn-header > button {
+#btn-header > button { /*aqui chamamaos nossa id e onde queremos fazer as alterações*/
   padding: 8px;
   background-color: transparent;
-  border: none;
+  border: none; /* none é usado para anular algo, nesse caso a borda*/
 }
 
 #btn-header > button > a {
   display: flex;
   align-items: center;
 }
-#btn-header > button > a > img {
-  width: 30px;
-  height: 30px;
-  margin-right: 2px;
+#btn-header > button > a > img { /* aqui estamos mexendo no ICON do botão*/
+  width: 30px; /*largura*/
+  height: 30px; /*tamanho*/
+  margin-right: 2px; /*margem da direita*/
 }
+
+#btn-header > button > a { /*estamos chamando aqui nossa tag de link para alterar*/
+  color: white; /*cor da letra*/
+  text-decoration: none; /*responsável por tirar o sublinhado que estava no texto*/
+  font-weight: 400; /* espessura da fonte*/
+}
+
+#img-destaque{ /* aqui chamamos a id que chamamos no html*/
+  padding: 260px; /*cuida do preenchimento*/
+  background-image: url(imagens/padaria.webp); /*usada para inserir imagens*/
+  background-position: center; /* aqui posicionamos nossa imagem para o centro*/
+}
+
+/* diferença entre id e class: a diferença entre eles é que um id é usado apenas quando tem só um elemnto que precisa ser editado
+já o class pode ser usado para identificar diversas coisas ao mesmo tempo, facilitando a edição*/
+
+
+.img-div { /* aqui chamamos nossa class para alteração*/
+  padding: 25px; /*cuida do preenchimento*/
+  background-image:url(imagens/img-div.jpg); /* usada para inserir imagens de fundo*/
+  background-position: center; /* aqui posicionamos nossa imagem para o centro*/
+  background-size: auto; /* background-size: especifica o tamanho das imagens, auto: serve para preencher de uma lateral à outra*/
+}
+
+
 
 
