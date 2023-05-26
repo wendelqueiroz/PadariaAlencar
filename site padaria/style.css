@@ -95,6 +95,61 @@ já o class pode ser usado para identificar diversas coisas ao mesmo tempo, faci
   background-size: auto; /* background-size: especifica o tamanho das imagens, auto: serve para preencher de uma lateral à outra*/
 }
 
+main > section > h2 { /* aqui estamos chamando nosso h2 para estiliza-lo*/
+margin-top: 0px; /*indica o espaço acima do elemento / superior */
+font-size: 36px; /* tamanho da letra */
+text-align: center; /*alinhando o texto para o centro*/
+color: #000000; /*cor da letra*/
+}
+
+#clients {/*aqui chamamos nosso id da section*/
+background-color: white;/*cor do fundo*/
+margin-top: 0; /* indica o espaço acima do elemento / superior */
+padding: 50px; /*cuida do preenchimento*/
+}
+
+.line{ /*aqui chamamos nossa class que está dentro do nosso hr, que é utilizado para quebrar linhas*/
+margin: 0 auto; /*definimos em 0 a margin e colocamos o mesmo para auto pa*/
+width: 20%; /*largura*/ 
+}
+
+#clients-list { /*aqui chamamos a nossa id*/
+display: flex; /*responsável por colocar os itens na mesma linha, lado a lado*/
+align-items: center; /* alinhar os itens para o centro*/
+justify-content: space-evenly; /*tradução: justificar-conteúdo: espaço unido*/
+margin-top: 30px; /* indica o espaço acima do elemento / superior */
+}
+
+.clients-item { /* aqui chamamos nossa class que está dentro da nossa id */
+display: flex; /* reponsável por colocar os itens na mesma linha */
+justify-content: center; /* justificar-conteúdo no centro*/
+align-items: center; /*alinhar os itens para o centro*/
+flex-direction: column; /* */
+}
+
+.clients-item > img { /*aqui chamamos nossa tagg img para estilização*/
+width: 84px; /* largura*/
+height: 84px; /*tamanho*/
+}
+
+.clients-item > h3 { /* aqui chamamos nosso h3 para estilizar*/
+font-family: 'Dancing Script', cursive; /*fonte escolhida*/
+font-size: 26px; /*tamanho da fonte*/
+margin-top: 10px; /*indica o espaço acima do elemento*/
+align-items: center; /*alinhar os itens para o centro*/
+}
+
+.clients-item > p {
+  font-family: 'Dancing Script', cursive; /*fonte escolhida*/
+  font-size: 26px; /*indica o espaço acima do elemento*/
+  margin-top: 10px; /*indica o espaço acima do elemento*/
+  align-items: center; /*alinhar os itens para o centro*/
+}
+
+#featured-products { /*id usada para a section dos nossos produtos*/
+}
+
+
 
 
 
