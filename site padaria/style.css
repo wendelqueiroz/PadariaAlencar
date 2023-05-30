@@ -147,7 +147,42 @@ align-items: center; /*alinhar os itens para o centro*/
 }
 
 #featured-products { /*id usada para a section dos nossos produtos*/
+background: linear-gradient(180deg, #f4ceaf 8.33%, rgba(244,200,175,0) 100%); /*aqui vamos dar cor ao nosso fundo em forma de gradiente*/
+padding: 30px; /*preenchimento*/
 }
+
+.products { /*aqui chamamos nossa class dos produtos para estilização*/
+  margin-top: 3em; /*indica o espaço acima do elemento/superior*/
+  display: flex; /*reponsável por colocar os itens na mesma linha (lado a lado)*/
+  align-items: center; /*alinhar os itens para o centro*/
+  justify-content: space-evenly; /*tradução:justificar-conteúdo: espaço uniformemente; alinha*/
+}
+
+.img-product { /*class inserida nas nossas tags IMG*/
+  width: 300px; /*largura*/
+  height: 300px; /* tamanho*/
+  border-radius: 50px; /*estilo arredondado das bordas*/
+}
+
+.title-products { /*class usada para edição dos títulos dos produtos, exemplo perfeito de o*/
+  margin-top: 10px; /*indica o espaço acima do elemento/superior*/
+  font-family: 'ubuntu', 'sans-serif'; /*fonte selecionada*/
+  text-align: center; /*alinhar texto. center: centro*/
+  font-size: 22px; /*tamanho da letra*/
+}
+
+#featured-products > a { /*aqui estamos chamando nossa TAG de link para estilização*/
+text-decoration: none; /*aqui desabilitamos com o none qualquer sublinhado que tenha dentro do texto*/
+font-family: 'ubuntu', 'sans-serif'; /*fonte selecionada*/
+font-size: 20px; /*tamanho da letra*/
+color: red; /* cor da letra*/
+}
+
+
+
+
+
+
 
 
 
