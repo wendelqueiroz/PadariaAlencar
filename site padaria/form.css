@@ -1,0 +1,86 @@
+*{ /*config padrão do css*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%; /*largura*/
+    height: 100vh; /*tamanho*/
+    background-image: url(imagens/imagem\ form.jpg) ; /*aqui inserimos a imagem*/
+    background-position: center; /*posicionamos a imagem ao centro*/
+    background-repeat: no-repeat; /*colocamos para que a img não repita*/
+    background-size: cover; /*aqui atribuimos para que a imagem fique sobre toda nossa página*/
+    display: flex; /*responsável por colocar os itens na mesma linha lado a lado*/
+    align-items: center; /*alinhar os itens para o centro*/
+    justify-content: center; /*justificar-conteúdo ao centro*/
+}
+
+.container{ /*aqui chamamos nossa class*/
+    max-width: 1280px; /*atribuimos aqui um tamanho máximo de largura que essa class irá exercer*/
+    margin: 0 auto;/* dizemos ao navegador que as margens superior e inferior são iguais a 0 e a da esquerda e direita são automáticas*/
+}
+
+form{ /*aqui chamamos nosso form para estilização*/
+    background-color: white;/*colocamos uma cor de fundo*/
+    max-width: 500px; /*atribuimos aqui um tamanho máximo de largura que esse formulário irá exercer*/
+    height: 450px; /*largura do formulário*/
+    padding: 70px;/*preenchimento*/
+    border-radius: 20px; /*arredondamento das bordas do formulário*/
+}
+
+form h1{ /* chamamos nosso texto para estilização*/
+    text-align: center; /*alinhamos ao centro*/
+    font-size: 30px; /*tamanho da letra*/
+    color: black; /*cor da letra*/
+}
+
+form p{ /* chamamos nosso parágrafo para estilização*/
+    text-align: center; /*alinhando para o centro nosso parágrafo*/
+    margin: 20px 0; /*dizemos  ao navegador que as margens superior e inferior são iguais a 20 e as da esquerda e da direita são 0*/
+}
+
+.input-single{ /*chamamos nossa class que está encabeçada nas div's dos nossos input e label*/
+    position: relative; /*posição relativa*/
+    margin: 20px 0; /*dizemos ao navegador que as margens superior e inferior são iguais a 20 e as da direita e esquerda serão 0*/
+}
+
+.input-single > label { /*chamamos nossa label para estilização*/
+    position: absolute; /*atribuimos uma posição absoluta em relação a o formulario */
+    left: 0; /* zeramos a marrgin  a esquerda*/
+    bottom: 5px; /*margem inferior atribuimos para 5px*/
+    transition: all 0.2s;/* inserimos uma  transição total para 0.2s*/
+    cursor: text; /* aqui é para quando passar o mouse, aparecer o indicador de texto*/
+}
+
+.input{ /*aqui chamamos nosso submit ou seja, o botão para estilização*/
+     width: 100%; /*largura*/
+     border: 0; /*tamanho da borda*/
+     border-bottom: 2px solid #ccc; /*estilização da borda inferior*/
+     padding: 5px; /*preenchimento do input*/
+     font-size: 17px; /*tamanho*/
+     outline: 0; /* */
+}
+
+form > .input-single > .input:focus ~ label, /* */
+form  .input-single  .input:valid ~ label{ /* */
+     transform: translateY(-25px); /* */
+     font-size: 12px; /* */
+     color: black; /* */
+}
+
+.btn { /* aqui estamos chamando nossa class .btn para estilização */
+    width: 100%; /*largura*/
+    text-align: center; /*alinhando o texto ao centro*/
+}
+
+form input[type=submit]{ /*aqui estilizamos nosso botão de enviar*/
+    padding: 10px  40px; /*preenchimento da altura e largura do botão*/
+    border: 0; /*aqui zeramos a borda*/
+    border-radius: 10px; /*colocamos aqui um arredondamento no botão*/
+    background-color: rgb(6,63,63); /*cor do botão*/
+    color: rgb(255,255,255); /*cor da letra (dentro do botão) */
+    cursor: pointer; /*torna o botão em algo clicável*/
+
+}
