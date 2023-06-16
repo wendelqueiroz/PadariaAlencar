@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    list-style:none;
+  }
+  
+  header {
+     display: flex; /* Responsável por colocar os itens na mesma linha (lado a lado) */
+     align-items: center; /* alinhar os itens do nosso Header para o centro*/
+     justify-content: space-evenly; /* tradução: justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página*/
+     padding:15px; /*Cuida do preenchimento*/
+     background-color: rgb(85, 48, 6); /*Cor de fundo do nosso Cabeçalho/header*/
+     overflow: hidden; /* */
+     line-height: 200px; /*altura da linha*/
+     max-height: 200px; /*altura máxima*/
+  }
+  
+  header > h1 { /* selecionamos aqui a cor da letra do nosso h1 ou seja, do nosso titulo */
+     color: white; /* chamamos a propriedade color e definimos uma cor em questão*/
+  }
+  
+  header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alterações */
+      width: 240px;
+      height: 165px;
+  }
+  
+  
+  #menu-header { /* nosso menu de navegação*/
+      display: flex; /*responsável por colocar os itens na mesma linha (lado a lado) */
+      align-items: center; /* Alinhar os itens do nosso header para o centro */
+  }
+  
+  #list-menu { /* nossa lista não ordenada, aqui mudaremos diretamente nossa lista*/
+      display: flex; /* reponsável or colocar os itens na mesma linha (lado a lado) */
+      margin-right: 1rem ; /* margem da direita. 1 rem esquivale a 16 px, ou seja podemos usalo */
+  }
+  
+  .item-menu-header { /* nossas li que estão dentro do list menu*/
+    margin-right: 25px; /* margem da direita*/
+  }
+  
+  .item-menu-header > a:hover { /*nossas li que estão dentro do list menu*/
+    color: yellow; /* aqui demos uma cor*/
+    transition: 1s; /* é o tempo em que será exibido ao passar o cursor*/
+  }
+  
+  .item-menu-header > a { /*nossa li que estão dentro do list menu, (a) nossa tag de link que é*/
+    color: white; /*cor das letras*/
+    text-decoration: none; /* reponsável por tirar o sublinhado da parte inferior do texto*/
+    font-size: 12px; /* tamanho da letra*/
+  }
+  
+  #btn-header { /*botão de login */
+    display: flex; /* responsável por colocar os itens na mesma linha*/
+  
+  }
+  
+  #btn-header > button { /*aqui chamamaos nossa id e onde queremos fazer as alterações*/
+    padding: 8px;
+    background-color: transparent;
+    border: none; /* none é usado para anular algo, nesse caso a borda*/
+  }
+  
+  #btn-header > button > a {
+    display: flex;
+    align-items: center;
+  }
+  #btn-header > button > a > img { /* aqui estamos mexendo no ICON do botão*/
+    width: 30px; /*largura*/
+    height: 30px; /*tamanho*/
+    margin-right: 2px; /*margem da direita*/
+  }
+  
+  #btn-header > button > a { /*estamos chamando aqui nossa tag de link para alterar*/
+    color: white; /*cor da letra*/
+    text-decoration: none; /*responsável por tirar o sublinhado que estava no texto*/
+    font-weight: 400; /* espessura da fonte*/
+  }
+  
+  /* diferença entre id e class: a diferença entre eles é que um id é usado apenas quando tem só um elemnto que precisa ser editado
+  já o class pode ser usado para identificar diversas coisas ao mesmo tempo, facilitando a edição*/
+  
+  
+  main > section > h2 { /* aqui estamos chamando nosso h2 para estiliza-lo*/
+  margin-top: 0px; /*indica o espaço acima do elemento / superior */
+  font-size: 36px; /* tamanho da letra */
+  text-align: center; /*alinhando o texto para o centro*/
+  color: #000000; /*cor da letra*/
+  }
+  
+  #clients {/*aqui chamamos nosso id da section*/
+  background-color: white;/*cor do fundo*/
+  margin-top: 0; /* indica o espaço acima do elemento / superior */
+  padding: 50px; /*cuida do preenchimento*/
+  }
+  
+  .line{ /*aqui chamamos nossa class que está dentro do nosso hr, que é utilizado para quebrar linhas*/
+  margin: 0 auto; /*definimos em 0 a margin e colocamos o mesmo para auto pa*/
+  width: 20%; /*largura*/ 
+  }
+  
+  #clients-list { /*aqui chamamos a nossa id*/
+  display: flex; /*responsável por colocar os itens na mesma linha, lado a lado*/
+  align-items: center; /* alinhar os itens para o centro*/
+  justify-content: space-evenly; /*tradução: justificar-conteúdo: espaço unido*/
+  margin-top: 30px; /* indica o espaço acima do elemento / superior */
+  }
+  
+  .clients-item { /* aqui chamamos nossa class que está dentro da nossa id */
+  display: flex; /* reponsável por colocar os itens na mesma linha */
+  justify-content: center; /* justificar-conteúdo no centro*/
+  align-items: center; /*alinhar os itens para o centro*/
+  flex-direction: column; /* */
+  }
+  
+  .clients-item > img { /*aqui chamamos nossa tagg img para estilização*/
+  width: 84px; /* largura*/
+  height: 84px; /*tamanho*/
+  }
+  
+  .clients-item > h3 { /* aqui chamamos nosso h3 para estilizar*/
+  font-family: 'Dancing Script', cursive; /*fonte escolhida*/
+  font-size: 26px; /*tamanho da fonte*/
+  margin-top: 10px; /*indica o espaço acima do elemento*/
+  align-items: center; /*alinhar os itens para o centro*/
+  }
+  
+  .clients-item > p {
+    font-family: 'Dancing Script', cursive; /*fonte escolhida*/
+    font-size: 26px; /*indica o espaço acima do elemento*/
+    margin-top: 10px; /*indica o espaço acima do elemento*/
+    align-items: center; /*alinhar os itens para o centro*/
+  }
+  
+  #featured-products { /*id usada para a section dos nossos produtos*/
+  background: linear-gradient(180deg, #f4ceaf 8.33%, rgba(244,200,175,0) 250%); /*aqui vamos dar cor ao nosso fundo em forma de gradiente*/
+  padding: 30px; /*preenchimento*/
+  }
+  
+  .products { /*aqui chamamos nossa class dos produtos para estilização*/
+    margin-top: 3em; /*indica o espaço acima do elemento/superior*/
+    display: flex; /*reponsável por colocar os itens na mesma linha (lado a lado)*/
+    align-items: center; /*alinhar os itens para o centro*/
+    justify-content: space-evenly; /*tradução:justificar-conteúdo: espaço uniformemente; alinha*/
+  }
+  
+  .img-product { /*class inserida nas nossas tags IMG*/
+    width: 300px; /*largura*/
+    height: 300px; /* tamanho*/
+    border-radius: 50px; /*estilo arredondado das bordas*/
+  }
+  
+  .title-products { /*class usada para edição dos títulos dos produtos, exemplo perfeito de o*/
+    margin-top: 10px; /*indica o espaço acima do elemento/superior*/
+    font-family: 'ubuntu', 'sans-serif'; /*fonte selecionada*/
+    text-align: center; /*alinhar texto. center: centro*/
+    font-size: 22px; /*tamanho da letra*/
+  }
+  
+  #featured-products > a { /*aqui estamos chamando nossa TAG de link para estilização*/
+  text-decoration: none; /*aqui desabilitamos com o none qualquer sublinhado que tenha dentro do texto*/
+  font-family: 'ubuntu', 'sans-serif'; /*fonte selecionada*/
+  font-size: 20px; /*tamanho da letra*/
+  color: red; /* cor da letra*/
+  }
+
+
+  #featured-products > h2 {
+          margin-bottom: 50px;
+  }
+
+
+  
+  #featured-products > a:hover { /* Aqui estamos chamando novamente nossa TAG de link para colocar um efeito Hover nela */
+      text-decoration: underline; /* Aqui chamamos o text decoration para colocar uma decoração ao passar do cursos underline serve como um sublinhado em baixo do nome*/
+      font-size: 22px; /* Tamanho da letra ao passar o cursor em cima */
+      transition: 1s; /* O tempo que será realizado esta ação */
+  }
+  
+   
+  footer {    /* */
+      padding: 80px;  /* */
+      background-image: url(imagens/img-footer.jpg);  /* */
+      background-position: bottom;  /* */
+      background-repeat: no-repeat;  /* */
+      
+  }
+  
+  footer > ul {   /* */
+      display: flex;  /* */
+      justify-content: space-evenly;  /* */
+  }
+  
+  footer > h2 {  /* */
+      color: black bold; /* */
+      font-size: 40px;  /* */
+      font-weight: bold;  /* */
+      text-align: center;  /* */
+      margin-bottom: 1em;  /* */
+  }
+  
+  .item-menu-footer {  /* */
+      display: flex;  /* */
+      align-items: center;  /* */
+      margin-top: 30px;  /* */
+  }
+  
+  .item-menu-footer > img {  /* */
+      width: 34px;  /* */
+      height: 34px;  /* */
+  }
+  
+  .item-menu-footer > p {  /* */
+      color: black bold; /* */
+      font-size: 24px; /* */
+      font-weight: bold; /* */
+      margin-left: 10px; /* */
+  }
+
+
+ .paes {
+    margin-top: 50px;
+  }
+
+  .lanches {
+    margin-top: 50px;
+  }
+
+  .doces{
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

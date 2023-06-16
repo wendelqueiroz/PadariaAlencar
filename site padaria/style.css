@@ -158,6 +158,9 @@ padding: 30px; /*preenchimento*/
   justify-content: space-evenly; /*tradução:justificar-conteúdo: espaço uniformemente; alinha*/
 }
 
+
+
+
 .img-product { /*class inserida nas nossas tags IMG*/
   width: 300px; /*largura*/
   height: 300px; /* tamanho*/
@@ -176,7 +179,9 @@ text-decoration: none; /*aqui desabilitamos com o none qualquer sublinhado que t
 font-family: 'ubuntu', 'sans-serif'; /*fonte selecionada*/
 font-size: 20px; /*tamanho da letra*/
 color: red; /* cor da letra*/
+margin-left: 37rem;
 }
+
 
 #featured-products > a:hover { /* Aqui estamos chamando novamente nossa TAG de link para colocar um efeito Hover nela */
     text-decoration: underline; /* Aqui chamamos o text decoration para colocar uma decoração ao passar do cursos underline serve como um sublinhado em baixo do nome*/
